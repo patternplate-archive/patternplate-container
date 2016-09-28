@@ -7,7 +7,12 @@ before_install:
   -
 
 script:
-  - docker build -t sinnerschrader/patternplate:$TRAVIS_TAG  .
+  - if [ $TRAVIS_TAG ]; then
+    docker build -t sinnerschrader/patternplate:$TRAVIS_TAG  .
+    fi
+  - if [ -z $TRAVIS_TAG ]; then
+    docker build .
+    fi
 
 after_success:
   - if [ "$TRAVIS_TAG" ]; then
