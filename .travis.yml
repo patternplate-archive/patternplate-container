@@ -8,10 +8,10 @@ before_install:
 
 script:
   - if [ $TRAVIS_TAG ]; then
-    docker build -t sinnerschrader/patternplate:$TRAVIS_TAG  .
+    docker build -t sinnerschrader/patternplate:$TRAVIS_TAG  .;
     fi
   - if [ -z $TRAVIS_TAG ]; then
-    docker build .
+    docker build .;
     fi
 
 after_success:
