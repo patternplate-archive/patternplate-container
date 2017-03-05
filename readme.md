@@ -2,6 +2,8 @@
 
 # patternplate-container
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sinnerschrader/patternplate-container.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 Grab it from docker hub
