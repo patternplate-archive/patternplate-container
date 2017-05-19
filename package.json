@@ -4,6 +4,6 @@
   "license": "MIT",
   "name": "patternplate-container",
   "dependencies": {
-    "patternplate": "1.0.7"
+    "patternplate": "1.7.3"
   }
 }
